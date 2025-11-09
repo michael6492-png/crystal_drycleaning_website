@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirCast Web - Screen Share</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 🌐 NAVIGATION BAR -->
+   <nav class="navbar">
+    <div class="logo">
+      <img src="images (6).jpeg" alt="Logo">
+      <h2>AirCast</h2>
+    </div>
+    <div class="nav-links">
+      <li><a href="sign in">sign in</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="service.html">service</li>
+        <li><a href="about.html">ABOUT</li>
+      <select>
+        <option>English</option>
+        <option>French</option>
+        <option>Spanish</option>
+       <option><li><a href="#home">Home</a></li></option> 
+      </select>
+    </div>
+  </nav>
+
+   <!-- <header>
+<nav class="bar">
+      <div class="logo">Dev<span>Mind</span></div>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nave-links"> 
+        <li><a href="#home">Home</a></li>
+        <li><a href="#build">Build</a></li>
+        <li><a href="#debug">Debug</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#message">message</a></li>
+      </ul> 
+</nav>
+  </header>  -->
+
+  
+
+  <!-- 🎯 MAIN CONTAINER -->
+  <div class="container">
+    <div class="card">
+      <h1>Receive Screen Cast</h1>
+      <p>Cast your screen here wirelessly via local or remote network</p>
+
+      <h3>Scan QR code via AirCast app</h3>
+      <div class="qr-box">
+        <img src="images (7).jpeg" alt="QR Code">
+      </div>
+      <p class="or-text">CHATH WITH ME</p>
+      <div class="code-box">09064404092</div>
+
+      <button class="btn">Share my screen</button>
+    </div>
+  </div>
+
+  
+  <section class="hero">
+  <div class="glass-card">
+    <h1>Seamless Connection. Limitless Control.</h1>
+    <p>Connect your devices, transfer files, and manage everything — all from your browser.</p>
+    <button class="connect-btn">Connect Device</button>
+  </div>
+</section>
+
+<!-- NEW SCAN TO CONNECT SECTION -->
+<section class="scan-section">
+  <div class="scan-glass">
+    <h2>Scan to Connect with Ajijala Michael</h2>
+    <div class="scan-box">
+      <div class="profile">
+        <img src="images (6).jpeg" alt="Profile" class="profile-img">
+        <h3>Ajijala Michael</h3>
+        <p>Software Engineer | Web Developer</p>
+      </div>
+      <div class="details">
+        <p><strong>Email:</strong> michael.dev@example.com</p>
+        <p><strong>GitHub:</strong> github.com/ajijala-michael</p>
+        <p><strong>Portfolio:</strong> www.ajijalamichael.dev</p>
+      </div>
+      <button class="connect-btn glow">Send Request</button>
+    </div>
+  </div>
+</section>
+
+<div class="scan-section">
+  <div class="scan-box">
+    <div class="qr-frame">
+      <div class="scan-line"></div>
+   <img id="qrImg" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=airdroid-connect" alt="QR">
+    </div>
+    <p class="status-text">Scanning...</p>
+  </div>
+</div>
+
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="glass-card">
+        <h1>Seamless Connection. Limitless Control.</h1>
+        <p>Connect your devices and manage them directly from your browser.</p>
+        <button class="connect-btn" id="open-scan">Open Scan</button>
+      </div>
+    </section>
+
+    <!-- Scan (shows owner's details inside glasscard) -->
+    <section id="scan" class="scan-section">
+      <div class="scan-glass">
+        <h2 id="scan-title">Scan to Connect</h2>
+
+        <div class="scan-content">
+          <div class="qr-frame">
+            <div class="scan-line"></div>
+            <!-- placeholder qr image - optional to replace with generated/real QR -->
+            <img id="qrImg" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=airdroid-connect" alt="QR">
+          </div>
+
+          <div class="owner-details">
+            <img id="ownerPic" class="profile-img" src="images (6).jpeg" alt="profile">
+            <h3 id="ownerName">Loading...</h3>
+            <p id="ownerRole">—</p>
+            <div class="owner-links">
+              <a id="ownerEmail" href="#">Email</a>
+              <a id="ownerWebsite" href="#" target="_blank">Website</a>
+            </div>
+            <p class="status-text" id="statusText">Scanning...</p>
+            <button class="connect-btn glow" id="requestConnect">Send Request</button>
+            <button class="copy-btn" id="copyInfo">Copy Info</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Contact form -->
+     <form action="process_temp.php" method="POST"></form>
+
+  <!-- Your main glassmorphism content here -->
+  <div class="glass-container">
+    <h2 id="statusText">Scanning...</h2>
+    <div class="owner-info">
+      <p id="ownerName">Engineer Ajijala Michael</p>
+      <p id="ownerRole">Software Engineer</p>
+      <p id="ownerWebsite">www.engineerconnect.com</p>
+      <p id="ownerEmail">engineer@example.com</p>
+    </div>
+    <button id="copyBtn">Copy Info</button>
+  </div>
+
+ 
+
+
+  <!-- ⚙ FOOTER -->
+  <footer>
+    <p>© 2025 AirCast Web | A simple wireless casting tool</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

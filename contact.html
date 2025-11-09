@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+    
+    <!-- Contact Form -->
+    <form id="contactForm" onsubmit="return showAlert()">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Let's Connect</h3>
+      <p>Email: ajijalamichaej@gmail.com</p>
+      <p>Phone: ‪+234 9064 4040 92 ‬</p>
+
+      <div class="social-links">
+        <a href="#"><img src="linkedinimage.png" alt="LinkedIn"></a>
+        <a href="#"><img src="githup.png" alt="GitHub"></a>
+        <a href="#"><img src="twitter12.jpeg" alt="Twitter"></a>
+        <a href="#"><img src="whatsapp.png" alt="whatsapp"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <a href="index.html" class="back-home">← Back to Home</a>
+
+<button onclick="window.location.href='index.html'" class="home-btn">Back to Home</button> -->
+
+<section id="contact">
+  <form> ... </form>
+  <a href="index.html" class="back-home">← Back to Home</a>
+</section>
+<script>
+function showAlert() {
+  alert('✅ Thank you! Your message has been successfully submitted.');
+  return false; // stop actual form submission (for demo)
+}
+</script>
+</body>
+</html>
